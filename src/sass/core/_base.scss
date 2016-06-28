@@ -1,0 +1,88 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+//body
+body {
+	margin: 0;
+	padding: 0;
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	font-weight: 400;
+	color: $color-text;
+	background: $color-bg;
+	hyphens: auto;
+
+	//@include breakpoint('s') {
+	//	font-size: $base-font-size--mobile;
+	//}
+
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: $color-primary !important;
+
+	// Add ligatures
+	font-feature-settings: "liga","dlig";
+
+	// Two ways to smoothen type, they are disabled by default
+	// -webkit-font-smoothing: antialiased;
+	//    -moz-font-smoothing: antialiased;
+	// font-smooth:always;
+}
+
+
+//selection
+::-moz-selection {
+	background: $color-selection-bg;
+	color: $color-selection;
+	text-shadow: none;
+}
+
+::selection {
+	background: $color-selection-bg;
+	color: $color-selection;
+	text-shadow: none;
+}
+
+
+/* === Images === */
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+
+/* === Links === */
+a {
+
+	//link / Visited?
+//	$color-link-visited           : $color-link-default;
+//	$color-link-active            : darken($color-link-default, 20%);
+
+	color: $color-link-hover;
+	transition: all .25s;
+	text-decoration: none;
+
+	&:hover {
+		color: color('black');
+	}
+
+	&:hover,
+	&:focus {
+		outline: 0;
+	}
+
+	img {
+		border: 0;
+	}
+}
+
+/* === iFrames === */
+iframe {
+	max-width: 100%;
+}

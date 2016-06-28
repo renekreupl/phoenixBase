@@ -1,0 +1,77 @@
+//------------------------------------//
+//  $VARIABLES
+//------------------------------------//
+
+
+// Fonts
+$font-family-sans             	: "Ubuntu", Helvetica, Arial, sans-serif;
+$font-family-serif            	: Georgia, "Times New Roman", Times, serif;
+$font-family-mono             	: Menlo, Monaco, "Courier New", monospace;
+
+
+// Base
+$base-font-size					: 16px;
+$base-line-height				: 24px;
+$base-font-size--mobile			: $base-font-size;
+$base-font-weight-bold			: bold;
+
+$base-font-family             	: $font-family-sans;
+$base-font-family-alt         	: $font-family-serif;
+
+$font-family-headings         	: $base-font-family; // using inherit will use $font-family-base for all headings
+$font-weight-headings         	: 300;    // instead of browser default, bold
+$line-height-headings         	: 1.1;
+
+$type-largest					: 40px;
+$type-large						: 30px;
+$type-mid						: 22px;
+$type-base						: $base-font-size;
+$type-small						: 12px;
+
+
+// Calculated measurements
+$line-height-ratio: $base-line-height / $base-font-size;
+$base-spacing-unit: $line-height-ratio;
+$half-spacing-unit: $base-spacing-unit / 2;
+
+// Grid
+$grid-cols: 12;
+$grid-gutter: 2%;
+
+// Layout
+$site-min-width:         320px;
+$site-wrapper-max-width: 1440px;
+
+// Breakpoints
+$media-breakpoints: (
+	hand: 480px,
+	lap:  768px,
+	desk: 1024px,
+	wall: 1200px
+);
+/*$large: 960px;
+$middle: 640px;
+$small: 480px;
+!* === Headlines === *!
+$h1-font-size: 40px;
+$h2-font-size: 25px;
+$h3-font-size: 22px;
+$h4-font-size: 16px;
+
+$h1-color: $color-blue;
+$h2-color: $color-blue;
+$h3-color: $color-font;
+$h4-color: $color-font;
+
+!* === Breakpoints === *!
+*/
+$large: 1250px;
+$middle: 640px;
+$small: 480px;
+// Media query expressions
+$media-features: (
+	portrait:  '(orientation: portrait)',
+	landscape: '(orientation: landscape)',
+	at2x: '(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)',
+	at3x: '(-webkit-min-device-pixel-ratio: 3), (min-resolution: 350dpi)'
+);

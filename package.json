@@ -1,0 +1,43 @@
+{
+  "name": "phoenixBase",
+  "title": "phoenixBase",
+  "version": "1.0.0",
+  "description": "phoenixBase - Frontend Boilerplate",
+  "homepage": "http://www.renekreupl.de",
+  "author": {
+    "name": "Rene Kreupl",
+    "email": "info@renekreupl.de",
+    "url": "http://www.renekreupl.de"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/phoenixlabs/phoenixBase",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "jquery": "^2.2.3",
+    "webfontloader": "latest",
+    "normalize.css": "latest"
+  },
+  "devDependencies": {
+    "require-dir": "latest",
+    "browser-sync": "^2.11.2",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-task-listing": "^1.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-imagemin": "latest",
+    "gulp-uglify": "^1.5.1",
+    "gulp-concat": "latest",
+    "gulp-modernizr": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-scss-lint": "latest",
+    "gulp-changed": "latest",
+    "gulp-htmlmin": "latest"
+  }
+}

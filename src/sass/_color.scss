@@ -1,0 +1,77 @@
+/**
+ * Global Color palette
+ * - Generic colors
+ * - Color scheme
+ * - Common colors
+ * - Links
+ * - Text selection
+ * - <hr>
+ * - Any others..
+ */
+
+// Generic colors
+$background						: #f6f5f5;
+$background-light				: #eaebed;
+$orange							: #fe8a16;
+$blue							: #254ea0;
+$blue-dark						: #2e4471;
+$red							: #e30613;
+$red-light						: #f4dcda;
+$red-dark						: #c81c0f;
+$yellow							: #fcd116;
+$yellow-gold					: #e8b92e;
+$green							: #3a9420;
+$green-light					: #dffae4;
+
+$purple-light					: #e2ebfe;
+$purple-dark					: #ccd6eb;
+
+$grey-light						: #cccccc;
+$grey							: #8d8d8d;
+$grey-dark						: #3f3f3f;
+$grey-dark-font					: #3a3a3b;
+
+
+// Color Scheme
+$color-primary                	: $blue;
+$color-secondary              	: $grey-dark-font;
+$color-highlight              	: $blue;
+
+
+// Common colors
+$color-text                   	: $grey-dark-font;
+$color-bg                     	: $background;
+$color-border                 	: #ddd;
+
+
+// Links
+$color-link-default           : $color-highlight;
+$color-link-visited           : $color-link-default;
+$color-link-hover             : darken($color-link-default, 20%);
+$color-link-active            : darken($color-link-default, 20%);
+
+// Text Selection
+$color-selection              : #fff;
+$color-selection-bg           : $color-primary;
+
+
+// <hr> border color
+$hr-border                    : lighten(#000, 70%);
+
+
+// 3rd party brand colors - find more at brandcolors.net
+$color-twitter                : #55acee;
+$color-facebook               : #3b5998;
+$color-youtube                : #cd201f;
+$color-pinterest              : #bd081c;
+$color-instagram              : #3f729b;
+
+
+// Form validation colors
+$state-success: #468847;
+$state-error:   #b94a48;
+$form-border-color-focus: $color-primary;
+$form-submit-color: $color-primary;
+$form-submit-color-hover: #444;
+
+
