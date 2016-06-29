@@ -2,6 +2,16 @@ var src = './src';
 var dest = "./dist";
 var assets = dest + "/assets";
 
+// TYPO3
+//var src = './Resources/Private';
+//var dest = "./Resources/Public";
+// Assets Dir called "Sass, JavaScript, Stylesheets, Images, Js"
+
+// WordPress
+//var src = './src';
+//var dest = ".";
+//var assets = dest + "/";
+
 module.exports = {
 	vendor: {
 		paths: {
@@ -38,7 +48,7 @@ module.exports = {
 		}
 	},
 	html: {
-		src: src + "./html/*.html",
+		src: src + "/html/*.html",
 		build: dest
 	},
 	clean: [assets + '/css/**/*', assets + '/js/**/*', assets + '/images/*'],
