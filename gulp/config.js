@@ -19,8 +19,8 @@ module.exports = {
 			js: assets + "/js/vendor"
 		},
 		js: [
-			"jquery/dist/jquery.min.js",
-			"bxslider/dist/jquery.bxslider.min.js"
+			"node_modules/jquery/dist/jquery.min.js",
+			"node_modules/bxslider/dist/jquery.bxslider.min.js"
 		]
 	},
 	sass: {
@@ -52,6 +52,6 @@ module.exports = {
 		build: dest
 	},
 	clean: [assets + '/css/**/*', assets + '/js/**/*', assets + '/images/*'],
-	watch: ['watch:sass', 'watch:scripts', 'watch:images'],
-	build: ['vendor', 'sass', 'scripts', 'images']
+	watch: ['watch:sass', 'watch:scripts', 'watch:images', 'watch:html'],
+	build: ['vendor', 'sass', 'scripts', 'images', 'html']
 };
