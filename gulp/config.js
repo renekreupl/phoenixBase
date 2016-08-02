@@ -1,5 +1,5 @@
-var src = './src';
-var dest = "./dist";
+var src = 'src';
+var dest = "dist";
 var assets = dest + "/assets";
 
 // TYPO3
@@ -52,6 +52,6 @@ module.exports = {
 		build: dest
 	},
 	clean: [assets + '/css/**/*', assets + '/js/**/*', assets + '/images/*'],
-	watch: ['watch:sass', 'watch:scripts', 'watch:images', 'watch:html'],
-	build: ['vendor', 'sass', 'scripts', 'images', 'html']
+	watch: ['watch:sass', 'watch:scripts', 'watch:images', ''],
+	build: ['vendor', 'sass', 'scripts', 'images']
 };
