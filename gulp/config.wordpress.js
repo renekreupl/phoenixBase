@@ -1,6 +1,6 @@
 var src = 'src/';
-var dest = "dist/";
-var assets = dest + "assets/";
+var dest = "";
+var assets = dest + "";
 
 module.exports = {
 	vendor: {
