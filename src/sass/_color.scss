@@ -10,37 +10,25 @@
  */
 
 // Generic colors
-$background						: #f6f5f5;
-$background-light				: #eaebed;
-$orange							: #fe8a16;
-$blue							: #254ea0;
-$blue-dark						: #2e4471;
-$red							: #e30613;
-$red-light						: #f4dcda;
-$red-dark						: #c81c0f;
-$yellow							: #fcd116;
-$yellow-gold					: #e8b92e;
-$green							: #3a9420;
-$green-light					: #dffae4;
 
-$purple-light					: #e2ebfe;
-$purple-dark					: #ccd6eb;
-
-$grey-light						: #cccccc;
-$grey							: #8d8d8d;
-$grey-dark						: #3f3f3f;
-$grey-dark-font					: #3a3a3b;
+$colors: (
+	red: #bd0f1e,
+	yellow: #fff,
+	grey-light: #eeeeee,
+	grey-dark: #2d2c31
+);
+$_color-base-grey: #2d2c31;
 
 
 // Color Scheme
-$color-primary                	: $blue;
-$color-secondary              	: $grey-dark-font;
-$color-highlight              	: $blue;
+$color-primary                	: color(red);
+$color-secondary              	: color(grey-dark);
+$color-highlight              	: $color-primary;
 
 
 // Common colors
-$color-text                   	: $grey-dark-font;
-$color-bg                     	: $background;
+$color-text                   	: $_color-base-grey;
+$color-bg                     	: #fff;
 $color-border                 	: #ddd;
 
 
@@ -73,5 +61,3 @@ $state-error:   #b94a48;
 $form-border-color-focus: $color-primary;
 $form-submit-color: $color-primary;
 $form-submit-color-hover: #444;
-
-
