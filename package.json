@@ -18,7 +18,9 @@
   "dependencies": {
     "jquery": "^2.2.3",
     "webfontloader": "latest",
-    "normalize.css": "latest"
+    "normalize.css": "latest",
+    "include-media": "latest",
+    "susy": "latest"
   },
   "devDependencies": {
     "require-dir": "^0.3.0",

@@ -1,6 +1,5 @@
 $grid-cols: 12 !default;
 $grid-gutter: 3% !default;
-$grid-breakpoint: 480px !default;
 
 $one_col: (100% - ($grid-gutter * ($grid-cols - 1))) / $grid-cols;
 
@@ -17,7 +16,7 @@ $one_col: (100% - ($grid-gutter * ($grid-cols - 1))) / $grid-cols;
             width: 100%;
             margin: 0 0 $grid-gutter 0;
 
-            @include breakpoint-min($grid-breakpoint) {
+			@include media('>grid') {
                 @include grid-cols($i);
                 margin: 0 0 0 $grid-gutter;
                 float: left;
@@ -28,7 +27,7 @@ $one_col: (100% - ($grid-gutter * ($grid-cols - 1))) / $grid-cols;
                 }
             }
 
-            @include breakpoint($grid-breakpoint) {
+			@include media('<grid') {
                 &:last-child {
                     margin: 0;
                 }
