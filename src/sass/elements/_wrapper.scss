@@ -2,7 +2,7 @@
 	width: 95%;
 	margin: 0 auto;
 
-	@include breakpoint-min($large) {
+	@include media('>desktop') {
 		width: 1200px;
 	}
 }

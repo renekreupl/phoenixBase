@@ -1,6 +1,6 @@
 var src = 'src/';
 var dest = "";
-var assets = dest + "";
+var assets = dest + "assets/";
 
 module.exports = {
 	vendor: {
@@ -42,6 +42,6 @@ module.exports = {
 		build: dest
 	},
 	clean: [assets + 'css/**/*', assets + 'js/**/*', assets + 'images/*'],
-	watch: ['watch:sass', 'watch:scripts', 'watch:images', 'watch:html'],
-	build: ['vendor', 'sass', 'scripts', 'images', 'html']
+	watch: ['watch:sass', 'watch:scripts', 'watch:images'],
+	build: ['vendor', 'sass', 'scripts', 'images']
 };
