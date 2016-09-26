@@ -36,13 +36,8 @@ body {
 
 
 //selection
+::selection,
 ::-moz-selection {
-	background: $color-selection-bg;
-	color: $color-selection;
-	text-shadow: none;
-}
-
-::selection {
 	background: $color-selection-bg;
 	color: $color-selection;
 	text-shadow: none;
@@ -59,19 +54,19 @@ img {
 
 /* === Links === */
 a {
-
-	//link / Visited?
-//	$color-link-visited           : $color-link-default;
-//	$color-link-active            : darken($color-link-default, 20%);
-
-	color: $color-link-hover;
+	color: $color-link-default;
 	transition: all .25s;
 	text-decoration: none;
 
 	&:hover {
-		color: color('black');
+		color: $color-link-hover;
 	}
-
+	&:visited {
+		color: $color-link-visited;
+	}
+	&:active {
+		color: $color-link-active;
+	}
 	&:hover,
 	&:focus {
 		outline: 0;
