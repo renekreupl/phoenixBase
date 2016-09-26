@@ -2,11 +2,9 @@
 
 Package with npm & gulp
 
-//TODO Update Readme
-//TODO Config File Wordpress und T3 path
+//TODO Update Readme (what to do, html minify, config files etc
 //TODO Sass WP & T3 styles
 //TODO ADD Magnific PopUp
-//TODO SASS BREAKPOINTS
 //TODO Copy Font / Webfontloader
 
 

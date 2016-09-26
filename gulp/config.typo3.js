@@ -1,12 +1,12 @@
-var src = 'src/';
-var dest = "dist/";
-var assets = dest + "assets/";
+var src = 'Resources/Private/';
+var dest = "Resources/Public/";
+var assets = dest;
 
 module.exports = {
 	vendor: {
 		paths: {
-			sass: src + "sass/vendor",
-			js: assets + "js/vendor"
+			sass: src + "Sass/vendor",
+			js: assets + "JavaScript/vendor"
 		},
 		js: [
 			"node_modules/jquery/dist/jquery.min.js",
@@ -15,8 +15,8 @@ module.exports = {
 		]
 	},
 	sass: {
-		src: src + "sass/**/*.scss",
-		build: assets + "css/",
+		src: src + "Sass/**/*.scss",
+		build: assets + "Stylesheets/",
 		autoprefixer: {
 			browsers: ['last 2 versions', '> 5%', 'ie 9']
 		},
@@ -26,12 +26,12 @@ module.exports = {
 		}
 	},
 	js: {
-		src: src + "js/**/*.js",
-		build: assets + "js/"
+		src: src + "Js/**/*.js",
+		build: assets + "JavaScript/"
 	},
 	img: {
-		src: src + "images/*",
-		build: assets + "images/",
+		src: src + "Images/*",
+		build: assets + "Images/",
 		options: {
 			optimizationLevel: 3,
 			progressive: true,
@@ -42,7 +42,7 @@ module.exports = {
 		src: src + "html/*.html",
 		build: dest
 	},
-	clean: [assets + 'css/**/*', assets + 'js/**/*', assets + 'images/*'],
-	watch: ['watch:sass', 'watch:scripts', 'watch:images', 'watch:html'],
-	build: ['vendor', 'sass', 'scripts', 'images', 'html']
+	clean: [assets + 'Stylesheets/**/*', assets + 'JavaScript/**/*', assets + 'Images/*'],
+	watch: ['watch:sass', 'watch:scripts', 'watch:images'],
+	build: ['vendor', 'sass', 'scripts', 'images']
 };

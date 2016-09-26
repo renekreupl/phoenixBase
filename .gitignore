@@ -13,4 +13,4 @@ node_modules/
 .sass-cache/
 
 src/sass/vendor/**/*
-dist/assets/**/*
+dist/**/*
