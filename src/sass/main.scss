@@ -4,7 +4,7 @@
  * @author: Rene Kreupl
  * @copyright: 2016 by phoenixlabs.de
  * @repository: https://github.com/phoenixlabs/phoenixBase
- * @version: 1.0.0;
+ * @version: 1.1.0;
  */
 
 @import "color";
@@ -19,6 +19,8 @@
 @import "core/functions";
 @import "core/helper-classes";
 @import "core/grid";
+
+@import "modules/pace";
 
 @import "ui/typography";
 @import "ui/form";

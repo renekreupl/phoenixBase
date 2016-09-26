@@ -1,7 +1,7 @@
 {
   "name": "phoenixBase",
   "title": "phoenixBase",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "phoenixBase - Frontend Boilerplate",
   "homepage": "http://www.renekreupl.de",
   "author": {
@@ -20,7 +20,9 @@
     "webfontloader": "latest",
     "normalize.css": "latest",
     "include-media": "latest",
-    "susy": "latest"
+    "susy": "latest",
+    "pace-progress": "latest",
+    "bxslider": "latest"
   },
   "devDependencies": {
     "require-dir": "^0.3.0",
