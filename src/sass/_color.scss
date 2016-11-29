@@ -35,8 +35,8 @@ $color-border                 	: #ddd;
 // Links
 $color-link-default           : $color-highlight;
 $color-link-visited           : $color-link-default;
-$color-link-hover             : darken($color-link-default, 20%);
-$color-link-active            : darken($color-link-default, 20%);
+$color-link-hover             : $color-text;
+$color-link-active            : $color-text;
 
 // Text Selection
 $color-selection              : #fff;
