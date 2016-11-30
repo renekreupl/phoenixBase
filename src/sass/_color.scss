@@ -12,17 +12,21 @@
 // Generic colors
 
 $colors: (
-	red: #bd0f1e,
-	yellow: #fff,
-	grey-light: #eeeeee,
-	grey-dark: #2d2c31
+	'red': #bd0f1e,
+	'yellow': #fff,
+	'grey-light': #eeeeee,
+	'grey-dark': #2d2c31
 );
 $_color-base-grey: #2d2c31;
 
+$opacities: (
+	'light': 0.8, // opacity used with lighter colors
+	'dark': 0.4   // opacity used with darker colors
+);
 
 // Color Scheme
-$color-primary                	: color(red);
-$color-secondary              	: color(grey-dark);
+$color-primary                	: color('red');
+$color-secondary              	: color('grey-dark');
 $color-highlight              	: $color-primary;
 
 
@@ -35,8 +39,8 @@ $color-border                 	: #ddd;
 // Links
 $color-link-default           : $color-highlight;
 $color-link-visited           : $color-link-default;
-$color-link-hover             : darken($color-link-default, 20%);
-$color-link-active            : darken($color-link-default, 20%);
+$color-link-hover             : $color-text;
+$color-link-active            : $color-text;
 
 // Text Selection
 $color-selection              : #fff;
