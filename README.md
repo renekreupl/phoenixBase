@@ -1,55 +1,96 @@
-# [phoenixBase]
+# [phoenixBase - a Frontend Boilerplate]
 
-Package with npm & gulp
+* NPM
+* Gulp Tasks
+* Build Config (TYPO3 and WordPress Examples includes)
+* SASS Base
 
-//TODO Update Readme (what to do, html minify, config files etc
-//TODO Sass WP & T3 styles
-//TODO ADD Magnific PopUp
-//TODO Copy Font / Webfontloader
-
-
-http://zellwk.com/blog/nunjucks-with-gulp/
-https://www.npmjs.com/package/gulp-svgstore
-https://github.com/addyosmani/critical
-
+Feel free creating issues for bugs and wishes.
 
 
 ## Table of contents
 
 * [Quick start](#quick-start)
-* [Creators](#creators)
+* [Dokumentation](#dokumentation)
+* [ToDo](#todo)
+* [Creator](#creator)
 * [Copyright and license](#copyright-and-license)
 
 
 ## Quick start
 
-For the first time you need install scss-lint
-gem install scss_lint
-or
-sudo gem install scss_lint
+* clone or download the repo
+* install editorconfig in your ide (if you want use it - plugins aviable for phpstorm, coda and a lot more)
+* install packages with npm and run building task in gulp
 
-Bitte wie folgt vorgehen:
+```
+npm install
+gulp build
+```
 
-* git clone der letzten version in lokale umgebung
-* editor mit editorconfig plugin verwenden (coda oder phpstorm)
-* npm install ausführen
-* gulp build ausführen
+* now you can start developing with
 
-SCSS-Lint Doku
-https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md
+```
+gulp watch
+```
 
 
 ### What's included
 
 a lot
 
+## Dokumentation
 
-## Creators
+### NPM and GULP
+
+you need install node/npm and gulp
+
+### SCSS Lint
+
+if you want use scss-lint install it
+
+```
+gem install scss_lint
+or
+sudo gem install scss_lint
+```
+
+gulp task for scss-lint
+
+```
+gulp scss-lint
+```
+
+SCSS-Lint Doku
+https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md
+
+
+## ToDo
+
+
+//TODO Sass WP & T3 styles  
+//TODO ADD Magnific PopUp  
+//TODO Copy Font / Webfontloader  
+
+
+http://zellwk.com/blog/nunjucks-with-gulp/  
+https://www.npmjs.com/package/gulp-svgstore  
+https://github.com/addyosmani/critical  
+
+
+## Creator
 
 **Rene Kreupl**
 
 * <https://renekreupl.de/>
 
+**Credits**
+
+* http://www.sassmeister.com/gist/ac4322cc0564cd37c432
+* http://www.sassmeister.com/gist/7f22e44ace49b5124eec
+* https://davidhellmann.com/blog/development/responsive-typography-modular-scale-und-fluid-type/
+
 ## Copyright and license
 
-Code and documentation copyright 2016 Rene Kreupl, Code released under [the MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
+Code and documentation copyright 2016 Rene Kreupl,  
+Code released under [the MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
