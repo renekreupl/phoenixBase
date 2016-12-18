@@ -18,10 +18,6 @@ body {
 	background: $color-bg;
 	hyphens: auto;
 
-	//@include breakpoint('s') {
-	//	font-size: $base-font-size--mobile;
-	//}
-
 	-webkit-text-size-adjust: 100%;
 	-webkit-tap-highlight-color: $color-primary !important;
 
@@ -80,4 +76,5 @@ a {
 /* === iFrames === */
 iframe {
 	max-width: 100%;
+	vertical-align: middle;
 }

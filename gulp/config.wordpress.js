@@ -30,7 +30,7 @@ module.exports = {
 		build: assets + "js/"
 	},
 	img: {
-		src: src + "images/*",
+		src: src + "images/**/*",
 		build: assets + "images/",
 		options: {
 			optimizationLevel: 3,
