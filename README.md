@@ -64,6 +64,24 @@ gulp scss-lint
 SCSS-Lint Doku
 https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md
 
+### SVG USe
+
+```
+.class {
+	&:before {
+		@include sprite(twitter);
+		content: '';
+		float: left;
+		margin-right: 0.5em;
+	}
+
+	&:hover {
+		&:before {
+			@include sprite(twitterHover, bg);
+		}
+	}
+}
+```
 
 ## ToDo
 

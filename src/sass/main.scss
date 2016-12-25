@@ -4,7 +4,7 @@
  * @author: Rene Kreupl
  * @copyright: 2016 by phoenixlabs.de
  * @repository: https://github.com/phoenixlabs/phoenixBase
- * @version: 1.2.1;
+ * @version: 1.3.0;
  */
 
 
@@ -21,6 +21,7 @@
 @import "core/base";
 @import "core/helper-classes";
 @import "core/grid";
+@import "core/svg";
 
 @import "modules/pace";
 //@import "modules/typo3";
