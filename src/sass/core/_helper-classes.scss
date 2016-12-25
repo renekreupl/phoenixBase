@@ -15,6 +15,7 @@
 	@extend %clearfix;
 }
 
+
 /* === List-Reset === */
 %list-reset {
 	margin: 0;
@@ -96,4 +97,24 @@ textarea[contenteditable] {
 
 .white {
 	color: white;
+}
+
+/* Position Mixin Helper */
+@mixin vertical-align($position: relative) {
+	position: $position;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin horizontal-align($position: relative) {
+	position: $position;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin center-align($position: relative) {
+	position: $position;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }

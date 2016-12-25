@@ -36,6 +36,13 @@ module.exports = {
 			optimizationLevel: 3,
 			progressive: true,
 			interlaced: true
+		},
+		svg: {
+			src: src + "Svg/**/*.svg",
+			build: "",
+			file: "sprite.svg",
+			sass: src + "Sass/vendor/_svg-sprite.scss",
+			template: src + "Sass/core/sprite-template.scss"
 		}
 	},
 	html: {
@@ -43,6 +50,6 @@ module.exports = {
 		build: dest
 	},
 	clean: [assets + 'Stylesheets/**/*', assets + 'JavaScript/**/*', assets + 'Images/*'],
-	watch: ['watch:sass', 'watch:scripts', 'watch:images'],
-	build: ['vendor', 'sass', 'scripts', 'images']
+	watch: ['watch:sass', 'watch:scripts', 'watch:images', 'watch:svg'],
+	build: ['vendor', 'svg', 'sass', 'scripts', 'images']
 };
