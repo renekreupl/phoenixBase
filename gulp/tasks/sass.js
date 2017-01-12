@@ -7,7 +7,10 @@ var rename          = require('gulp-rename');
 var config 			= require('../config').sass;
 
 gulp.task('sass', function() {
-	return gulp.src( config.src )
+	return gulp.src( [
+		config.src,
+		'!src/sass/core/sprite-template.scss'
+	] )
 		.pipe(sourcemaps.init())
 		.pipe(rename({ suffix: '.min'}))
 		.pipe(sass( config.output )
