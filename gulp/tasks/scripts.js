@@ -11,7 +11,7 @@ gulp.task('scripts', function() {
 		.pipe(sourcemaps.init())
 		.pipe(uglify())
 		.pipe(concat('main.min.js'))
-		.pipe(sourcemaps.write())
+		.pipe(sourcemaps.write('./maps'))
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 		.pipe(gulp.dest( config.build ))
 		.pipe(notify({ message: 'Yo, Script task complete.' }));
