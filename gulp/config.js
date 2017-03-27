@@ -41,8 +41,8 @@ module.exports = {
 			src: src + "svg/**/*.svg",
 			build: "",
 			file: "sprite.svg",
-			sass: src + "sass/vendor/_svg-sprite.scss",
-			template: src + "sass/core/sprite-template.scss"
+			sass: src + "sass/_____generic/_generic.svg-sprite.scss",
+			template: src + "sass/______tools/_tools.tmpl.svg.scss"
 		}
 	},
 	html: {
