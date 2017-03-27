@@ -1,0 +1,30 @@
+/* === Links === */
+a {
+	color: $color-link-default;
+	transition: all .25s;
+	text-decoration: none;
+
+	&:hover {
+		color: $color-link-hover;
+	}
+	&:visited {
+		color: $color-link-visited;
+	}
+	&:active {
+		color: $color-link-active;
+	}
+	&:hover,
+	&:focus {
+		outline: 0;
+	}
+
+	img {
+		border: 0;
+	}
+}
+
+
+a[href$='.pdf'] {
+	background: url("../images/icons/pdficon_small.png") no-repeat;
+	padding: 0 0 0 22px;
+}

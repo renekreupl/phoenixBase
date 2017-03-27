@@ -1,0 +1,53 @@
+/*
+
+* Color Function
+* Example usage
+
+.button {
+	background-color: color('primary');
+
+	&:hover {
+		background-color: color('primary', 'light');
+	}
+
+	&.secondary {
+		background-color: color('secondary');
+
+		&:hover {
+			background-color: color('secondary', 'dark');
+		}
+	}
+
+	&.transparent {
+		background-color: color('primary', $opacity: 'light');
+	}
+}*/
+
+$color-key: 'base';
+
+@function color($name: 'primary', $variant: $color-key, $opacity: 1) {
+	$color: null;
+
+
+	$color-spectrum: map-get($colors, $name);
+	@if $color-spectrum {
+		$color: map-get($color-spectrum, $variant);
+	}
+
+	$alpha: if(type-of($opacity) == 'number', $opacity, map-get($opacity, $opacity));
+	@if $alpha {
+		$color: rgba($color, $alpha);
+	}
+
+	@return $color;
+}
+
+// usw background-color: color-level('primary', 2);
+$color-interval: 10% !global;
+
+@function color-level($color-name, $level: 0) {
+	$color: color($color-name);
+	$color-base: if($level < 0, black, white);
+
+	@return mix($color-base, $color, $level * $color-interval);
+}

@@ -1,0 +1,52 @@
+/**
+ * Global Variables first included so they can easily get overriden.
+ *
+ * @package  phoenixBase
+ * @author   Rene Kreupl <info@renekreupl.de>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _settings.global.scss
+|--------------------------------------------------------------------------
+*/
+
+$app-max-width:            1092px;
+$app-gutter-width: 16px;  // How much ist the Gutter on each Side
+
+// Grid
+$grid-cols: 12;
+$susy: (
+	columns: $grid-cols,
+	gutters: 1/4,
+	global-box-sizing: border-box
+);
+$grid-gutter: 2%; // Easy Grid Scss
+
+
+// Master Breakpoints
+$breakpoints: (
+	'phone': 320px,
+	'grid': 830px,
+	'tablet': 768px,
+	'desktop': 980px,
+	'wrapper': 1240px,
+	'wrapper-big': 1350px
+);
+
+$ieSprite: '.lt-ie9' !default;
+$sprite: map-get($icons, sprite) !default;
+$baseFontSize: 16px !default;
+
+/**
+ * Extend `.btn {}` in _components.buttons.scss.
+ */
+
+// These variables are framework variables, sourced from variables defined
+// above. Feel free to use these variables throughout your project, but do not
+// modify or reassign them.
+$base-spacing-unit:       $base-line-height;
+$base-spacing-unit-tiny:  round($base-spacing-unit / 4);
+$base-spacing-unit-small: round($base-spacing-unit / 2);
+$base-spacing-unit-large: round($base-spacing-unit * 2);
+$base-spacing-unit-huge:  round($base-spacing-unit * 4);

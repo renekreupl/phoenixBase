@@ -1,0 +1,42 @@
+/**
+ * Default Styles for html and body Element
+ *
+ * @package  generator-mh-boilerplate
+ * @author   Martin Herweg <info@martinherweg.de>
+ * @author   David Hellmann <davidhellmann.com@gmail.com>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _elements.page.scss
+|--------------------------------------------------------------------------
+*/
+
+
+html {
+	overflow-y: scroll;
+	height: 100%;
+
+	font-family: $base-font-family;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	font-weight: $base-font-weight;
+	color: $color-text;
+	background: $color-bg;
+	hyphens: auto;
+
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: $color-primary !important;
+
+	// Add ligatures
+	//font-feature-settings: "liga","dlig";
+
+	// Two ways to smoothen type, they are disabled by default
+	// -webkit-font-smoothing: antialiased;
+	//    -moz-font-smoothing: antialiased;
+	// font-smooth:always;
+}
+
+body {
+	height: 100%;
+}
