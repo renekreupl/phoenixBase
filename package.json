@@ -24,6 +24,7 @@
     "family.scss": "latest",
     "pace-progress": "latest",
     "photoswipe": "latest",
+    "lazysizes": "latest",
     "bxslider": "latest"
   },
   "devDependencies": {
