@@ -1,0 +1,92 @@
+/**
+ * Utilities
+ * Non-semantic helper classes
+ */
+
+
+
+
+//https://github.com/csswizardry/frcss/blob/master/_trumps.typography.scss
+//https://github.com/csswizardry/frcss/blob/master/_trumps.display.scss
+
+.clearfix {
+	@include clearfix();
+}
+
+/* === List-Reset === */
+%list-reset {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+// For background image replacement
+.ir {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	border: 0;
+	direction: ltr;
+	display: block;
+	overflow: hidden;
+	text-align: left;
+	text-indent: -999em;
+
+	br {
+		display: none;
+	}
+}
+
+
+
+// Hide from both screenreaders and browsers: h5bp.com/u
+.is-hidden {
+	display: none !important;
+	visibility: hidden !important;
+}
+
+.is-shown { display: block; }
+
+// Hide only visually, but have it available for screenreaders: h5bp.com/v
+.is-visuallyHidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+
+	// Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p
+	&.focusable:active,
+	&.focusable:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+}
+
+// Hide visually and from screenreaders, but maintain layout
+.is-invisible { visibility: hidden; }
+
+
+// Helpers only if it doesn't already have a class to use
+.float-right { float: right !important; }
+.float-left { float: left !important; }
+
+.text-left { text-align: left !important; }
+.text-center { text-align: center !important; }
+.text-right { text-align: right !important; }
+.text-upper { text-transform: uppercase !important; }
+.text-strong { font-weight: bold !important; }
+.text-nowrap { white-space: nowrap !important; }
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+textarea[contenteditable] {
+	-webkit-appearance: none;
+}
+
