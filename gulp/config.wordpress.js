@@ -10,7 +10,9 @@ module.exports = {
 		},
 		js: [
 			"node_modules/jquery/dist/jquery.min.js",
-			"node_modules/pace-progress/pace.min.js",
+			"node_modules/webfontloader/webfontloader.js",
+			"node_modules/photoswipe/dist/photoswipe.min.js",
+			"node_modules/photoswipe/dist/photoswipe-ui-default.min.js",
 			"node_modules/bxslider/dist/jquery.bxslider.min.js"
 		]
 	},

@@ -23,6 +23,7 @@
     "susy": "latest",
     "family.scss": "latest",
     "pace-progress": "latest",
+    "photoswipe": "latest",
     "bxslider": "latest"
   },
   "devDependencies": {
