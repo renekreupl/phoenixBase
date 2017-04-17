@@ -34,10 +34,6 @@ $breakpoints: (
 	'wrapper-big': 1350px
 );
 
-$ieSprite: '.lt-ie9' !default;
-$sprite: map-get($icons, sprite) !default;
-$baseFontSize: 16px !default;
-
 /**
  * Extend `.btn {}` in _components.buttons.scss.
  */
