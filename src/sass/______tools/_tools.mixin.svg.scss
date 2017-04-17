@@ -9,9 +9,7 @@
  * https://github.com/sass-mq/sass-mq/blob/master/_mq.scss
  */
 
-/// Base font size on the `<body>` element
-/// @type Number (unit)
-$mq-base-font-size: 16px !default;
+
 
 /// Convert pixels to ems
 ///
@@ -33,10 +31,6 @@ $mq-base-font-size: 16px !default;
 	}
 	@return ($px / $base-font-size) * 1em;
 }
-/// Add class for <IE9 sprite fallback
-/// @group sprite
-/// @type String
-$ieSprite: '.lt-ie9' !default;
 
 /// Set the `$sprite` map
 /// @group sprite
@@ -83,58 +77,6 @@ $sprite: map-get($icons, sprite) !default;
 	display: inline-block;
 	background-image: url(map-get($sprite, svgPath));
 	background-size: mq-px2em(map-get($sprite, width)) mq-px2em(map-get($sprite, height));
-}
-/// Assign the correct PNG background image and dimensions to the element
-%ie-sprite {
-	background-image: url(map-get($sprite, pngPath));
-}
-
-/// Add a sprite PNG icon for browsers with the `$ieSprite` class with px for positioning
-/// @param {string} $icon - The name of the icon
-/// @param {string} $type [all] - The properties wanted (can be `all`, `size` or `bg`).
-/// - `all` ensures the icon has the background, position and size.
-/// - `size` is just for dimensions
-/// - `bg` just  applies the backgrounds to an element
-/// @example scss - Usage
-/// .class {
-/// 	@include ie-sprite(arrow);
-/// 	&:hover {
-/// 		@include ie-sprite(arrowDown, bg)
-/// 	}
-/// }
-///
-/// @example css - Output
-/// .lt-ie9 .class {
-///     background-image: url("../img/sprite.png");
-/// }
-/// .lt-ie9 .class {
-///     width: 20px;
-///     height: 20px;
-///     background-position: -5px -5px;
-/// }
-/// .lt-ie9 .class:hover {
-///     background-position: -36px -36px;
-/// }
-@mixin ie-sprite($icon, $type: all) {
-	$iconMap: icon-attr($icon);
-
-	@if $ieSprite {
-		#{$ieSprite} & {
-			@if $type == all {
-				// Shares the PNG background
-				@extend %ie-sprite;
-			}
-			// Outputs dimensions of icon
-			@if $type == all or $type == size {
-				width: map-get($iconMap, width);
-				height: map-get($iconMap, height);
-			}
-			// Outputs background position
-			@if $type == all or $type == bg {
-				background-position: (map-get($iconMap, x) - 5) (map-get($iconMap, y) - 5);
-			}
-		}
-	}
 }
 
 /// Add an SVG sprite icon using em positioning, with a PNG icon for browsers with the `$ieSprite` class using px positioning
@@ -196,8 +138,5 @@ $sprite: map-get($icons, sprite) !default;
 	@if $type == all or $type == bg {
 		background-position: mq-px2em(map-get($iconMap, x) - 5) mq-px2em(map-get($iconMap, y) - 5);
 	}
-
-	// Add ie fallback
-	@include ie-sprite($icon, $type);
 
 }
