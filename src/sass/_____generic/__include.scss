@@ -1,0 +1,14 @@
+/**
+ * GENERIC
+ *
+ *  Generic rules are project-agnostic.
+ *  These can be copied from any project to the next
+ *
+ * @package  phoenixBase
+ * @author   Rene Kreupl <info@renekreupl.de>
+ */
+
+@import "generic.box-sizing";
+@import "generic.normalize";
+@import "generic.reset";
+@import "generic.shared";

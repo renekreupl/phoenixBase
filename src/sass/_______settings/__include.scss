@@ -1,0 +1,19 @@
+/**
+ * SETTINGS
+ *
+ *  Settings store all variables, config switches, etc.
+ *  Split up into logical sections, the smaller and simpler the better.
+ *
+ * @package  phoenixBase
+ * @author   Rene Kreupl <info@renekreupl.de>
+ */
+
+
+@import "../______tools/tools.functions.color";
+@import "../______tools/tools.vendor.susy";
+
+@import "settings.color";
+@import "settings.fonts";
+@import "settings.global";
+@import "settings.svg";
+@import "settings.susy";

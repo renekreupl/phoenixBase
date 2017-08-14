@@ -5,7 +5,7 @@ var plumber 		= require('gulp-plumber');
 var config 			= require('../config').html;
 
 gulp.task('html', function() {
-	return gulp.src( config.src )
+	return gulp.src( config.src+'/*.html' )
 		.pipe(htmlmin({collapseWhitespace: true}))
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 		.pipe(gulp.dest( config.build ))
@@ -13,5 +13,5 @@ gulp.task('html', function() {
 });
 
 gulp.task('watch:html', function () {
-	gulp.watch( config.src , ['html']);
+	gulp.watch( config.src+'/*.html' , ['html']);
 });

@@ -14,3 +14,5 @@ node_modules/
 
 src/sass/vendor/**/*
 dist/**/*
+src/js/pace.min.js
+src/js/lazysizes.min.js

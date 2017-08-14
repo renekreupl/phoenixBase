@@ -9,5 +9,7 @@ jQuery(document).ready(function($) {
 		$(".columns div:first-child").css( "margin-left", "0" );
 	}
 
-	
+	initPhotoSwipeFromDOM('.my-gallery');
+
+
 });

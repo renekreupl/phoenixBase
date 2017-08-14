@@ -1,0 +1,41 @@
+/**
+ * Align element Mixins
+ *
+ * @package  phoenixbase
+ * @author   Rene Kreupl <info@renekreupl.de>
+ */
+
+/*
+|--------------------------------------------------------------------------
+| _tools.mixin.align.scss
+|--------------------------------------------------------------------------
+*/
+
+
+/* USAGE
+ * RESULT
+|--------------------------------------------------------------------------
+| h1 { @include vertical-align(); }
+| h1 { position: relative; top: 50%; transform: translateY(-50%); }
+|--------------------------------------------------------------------------
+*/
+
+
+@mixin vertical-align($position: relative) {
+	position: $position;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin horizontal-align($position: relative) {
+	position: $position;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+@mixin center-align($position: relative) {
+	position: $position;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

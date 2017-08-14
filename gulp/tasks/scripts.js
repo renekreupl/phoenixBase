@@ -7,7 +7,7 @@ var concat 			= require('gulp-concat');
 var config 			= require('../config').js;
 
 gulp.task('scripts', function() {
-	return gulp.src( config.src )
+	return gulp.src( config.src+'/**/*.js' )
 		.pipe(sourcemaps.init())
 		.pipe(uglify())
 		.pipe(concat('main.min.js'))
@@ -18,5 +18,5 @@ gulp.task('scripts', function() {
 });
 
 gulp.task('watch:scripts', function () {
-	gulp.watch( config.src , ['scripts']);
+	gulp.watch( config.src+'/**/*.js' , ['scripts']);
 });

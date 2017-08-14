@@ -10,12 +10,14 @@ module.exports = {
 		},
 		js: [
 			"node_modules/jquery/dist/jquery.min.js",
-			"node_modules/pace-progress/pace.min.js",
+			"node_modules/webfontloader/webfontloader.js",
+			"node_modules/photoswipe/dist/photoswipe.min.js",
+			"node_modules/photoswipe/dist/photoswipe-ui-default.min.js",
 			"node_modules/bxslider/dist/jquery.bxslider.min.js"
 		]
 	},
 	sass: {
-		src: src + "sass/**/*.scss",
+		src: src + "sass",
 		build: assets + "css/",
 		autoprefixer: {
 			browsers: ['last 2 versions', '> 5%', 'ie 9']
@@ -26,11 +28,11 @@ module.exports = {
 		}
 	},
 	js: {
-		src: src + "js/**/*.js",
+		src: src + "js",
 		build: assets + "js/"
 	},
 	img: {
-		src: src + "images/**/*",
+		src: src + "images",
 		build: assets + "images/",
 		options: {
 			optimizationLevel: 3,
@@ -38,7 +40,7 @@ module.exports = {
 			interlaced: true
 		},
 		svg: {
-			src: src + "svg/**/*.svg",
+			src: src + "svg",
 			build: "",
 			file: "sprite.svg",
 			sass: src + "sass/vendor/_svg-sprite.scss",
@@ -46,7 +48,7 @@ module.exports = {
 		}
 	},
 	html: {
-		src: src + "html/*.html",
+		src: src + "html",
 		build: dest
 	},
 	clean: [assets + 'css/**/*', assets + 'js/**/*', assets + 'images/*'],

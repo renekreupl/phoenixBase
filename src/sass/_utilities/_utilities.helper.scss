@@ -3,18 +3,15 @@
  * Non-semantic helper classes
  */
 
-/* === Clearfix === */
-%clearfix {
-	&:after {
-		content: '';
-		display: table;
-		clear: both;
-	}
-}
-.clearfix {
-	@extend %clearfix;
-}
 
+
+
+//https://github.com/csswizardry/frcss/blob/master/_trumps.typography.scss
+//https://github.com/csswizardry/frcss/blob/master/_trumps.display.scss
+
+.clearfix {
+	@include clearfix();
+}
 
 /* === List-Reset === */
 %list-reset {
@@ -76,8 +73,6 @@
 // Hide visually and from screenreaders, but maintain layout
 .is-invisible { visibility: hidden; }
 
-.l-mb0 { margin-bottom: 0 !important;}
-.l-mt0 { margin-top:    0 !important;}
 
 // Helpers only if it doesn't already have a class to use
 .float-right { float: right !important; }
@@ -95,26 +90,3 @@ textarea[contenteditable] {
 	-webkit-appearance: none;
 }
 
-.white {
-	color: white;
-}
-
-/* Position Mixin Helper */
-@mixin vertical-align($position: relative) {
-	position: $position;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-@mixin horizontal-align($position: relative) {
-	position: $position;
-	left: 50%;
-	transform: translateX(-50%);
-}
-
-@mixin center-align($position: relative) {
-	position: $position;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
