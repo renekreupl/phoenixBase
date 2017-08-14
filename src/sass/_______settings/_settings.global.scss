@@ -14,15 +14,6 @@
 $app-max-width:            1092px;
 $app-gutter-width: 16px;  // How much ist the Gutter on each Side
 
-// Grid
-$grid-cols: 12;
-$susy: (
-	columns: $grid-cols,
-	gutters: 1/4,
-	global-box-sizing: border-box
-);
-$grid-gutter: 2%; // Easy Grid Scss
-
 
 // Master Breakpoints
 $breakpoints: (
