@@ -5,7 +5,7 @@ var imagemin 		= require('gulp-imagemin');
 var config 			= require('../config').img;
 
 gulp.task('images', function() {
-	return gulp.src(config.src)
+	return gulp.src(config.src+'/**/*')
 		.pipe(changed(config.build))
 		.pipe(imagemin(config.options))
 		.pipe(gulp.dest(config.build))

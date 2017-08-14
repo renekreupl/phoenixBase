@@ -8,7 +8,7 @@ var config 			= require('../config').sass;
 
 gulp.task('sass', function() {
 	return gulp.src( [
-		config.src,
+		config.src+'/**/*.scss',
 		'!src/sass/core/sprite-template.scss'
 	] )
 		.pipe(sourcemaps.init())
@@ -23,5 +23,5 @@ gulp.task('sass', function() {
 });
 
 gulp.task('watch:sass', function () {
-	gulp.watch( config.src , ['sass']);
+	gulp.watch( config.src+'/**/*.scss' , ['sass']);
 });

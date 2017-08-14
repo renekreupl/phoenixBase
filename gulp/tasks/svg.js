@@ -7,7 +7,7 @@ var config 			= require('../config').img;
 
 
 gulp.task('svg', function () {
-	return gulp.src( config.svg.src )
+	return gulp.src( config.svg.src+'/**/*.svg' )
 		.pipe(plumber())
 		.pipe(svgSprite({
 			shape: {
@@ -43,5 +43,5 @@ gulp.task('svg', function () {
 });
 
 gulp.task('watch:svg', function () {
-	gulp.watch( config.svg.src , ['svg']);
+	gulp.watch( config.svg.src+'/**/*.svg' , ['svg']);
 });
