@@ -1,14 +1,13 @@
 /**
- * Vertical align element
+ * Align element Mixins
  *
- * @package  generator-mh-boilerplate
- * @author   Martin Herweg <info@martinherweg.de>
- * @author   David Hellmann <davidhellmann.com@gmail.com>
+ * @package  phoenixbase
+ * @author   Rene Kreupl <info@renekreupl.de>
  */
 
 /*
 |--------------------------------------------------------------------------
-| _tools.mixin.vertical-align.scss
+| _tools.mixin.align.scss
 |--------------------------------------------------------------------------
 */
 
@@ -16,15 +15,10 @@
 /* USAGE
  * RESULT
 |--------------------------------------------------------------------------
-| h1 { @include valign(); }
+| h1 { @include vertical-align(); }
 | h1 { position: relative; top: 50%; transform: translateY(-50%); }
 |--------------------------------------------------------------------------
 */
-
-
-
-
-
 
 
 @mixin vertical-align($position: relative) {
