@@ -102,13 +102,13 @@ https://github.com/addyosmani/critical
 
 * <https://renekreupl.de/>
 
-**Credits**
+**Credits and Thanks to**
 
 * http://www.sassmeister.com/gist/ac4322cc0564cd37c432
 * http://www.sassmeister.com/gist/7f22e44ace49b5124eec
 * https://davidhellmann.com/blog/development/responsive-typography-modular-scale-und-fluid-type/
-
+* David Hellmann/Martin Herweg/Sascha Fuchs and many others from the www
 ## Copyright and license
 
-Code and documentation copyright 2016 Rene Kreupl,  
+Code and documentation copyright 2017 Rene Kreupl,  
 Code released under [the MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).
