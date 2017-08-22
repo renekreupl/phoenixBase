@@ -13,5 +13,5 @@ gulp.task('images', function() {
 });
 
 gulp.task('watch:images', function () {
-	gulp.watch( config.src , ['images']);
+	gulp.watch( config.src+'/**/*' , ['images']);
 });
