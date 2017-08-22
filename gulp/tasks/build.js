@@ -21,7 +21,7 @@ gulp.task('build', function() {
 		.pipe(notify({ message: 'Copy lazysizes.min.js successful' }));
 
 	// build modernizr
-	gulp.src(config.js.src)
+	gulp.src(config.js.src+'/**/*.js')
 		.pipe(modernizr('modernizr.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest( config.vendor.paths.js ))
