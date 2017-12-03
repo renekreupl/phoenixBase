@@ -5,11 +5,17 @@ WebFont.load({
 });
 
 jQuery(document).ready(function($) {
-	if ($("html").hasClass("lt-ie9")) {
-		$(".columns div:first-child").css( "margin-left", "0" );
-	}
 
 	initPhotoSwipeFromDOM('.my-gallery');
 
+	//Fix jumping on sticky
+	$("body").css("padding-top", $(".c-header").height());
+
+	createSticky($(".c-header"));
+
+	$("#js__c-header__navtoggle").click(function() {
+		$(".c-navigation").fadeToggle();
+		$(".c-navicon", this).toggleClass("c-navicon--active");
+	});
 
 });
