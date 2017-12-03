@@ -1,0 +1,44 @@
+.o-grid {
+	@include media('>grid') {
+		display: flex;
+	}
+
+	&__item50 {
+		flex: 1 1;
+		display:flex;
+		flex-direction: column;
+		justify-content: center;
+		margin-right: gutter();
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__item30 {
+		flex: 1 1 span(4);
+		margin-right: gutter();
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__item70 {
+		flex: 1 1 span(8);
+		text-align: right;
+	}
+
+	&__item25 {
+		flex: 1 1 span(3);
+		margin-right: gutter();
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+}
+
+
+
+
