@@ -1,0 +1,49 @@
+.c-navigation {
+	@extend %list-reset;
+	display: none;
+
+	@include media('<640px') {
+		position: absolute;
+		z-index: 999;
+		width: 90%;
+		background: #fff;
+	}
+
+	@include media('>900px') {
+		display: inline-block;
+		background: none;
+	}
+
+	&__item {
+		position: relative;
+		text-align: center;
+
+		@include media('>900px') {
+			display: inline-block;
+			text-align: left;
+		}
+	}
+
+	&__item-level1 {
+		display: block;
+		padding: 18px 0;
+		position: relative;
+		text-transform: uppercase;
+		font-size: 18px;
+
+		@include media('>900px') {
+			margin-left: 25px;
+		}
+
+		&:link, &:visited {
+			color: $color-text;
+		}
+
+		&:hover, &.hover,
+		&--active:link, &--active:visited {
+			text-decoration: underline;
+		}
+
+	}
+
+}

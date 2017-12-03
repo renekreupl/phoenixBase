@@ -1,0 +1,38 @@
+.c-navicon {
+	display: inline-block;
+	vertical-align: middle;
+
+	&__line {
+		width: 35px;
+		height: 3px;
+		background-color: $color-primary;
+		display: block;
+		margin: 6px auto;
+		transition: all 0.3s ease-in-out;
+	}
+
+	&--active {
+		transition: all 0.3s ease-in-out;
+		transition-delay: 0.6s;
+		transform: rotate(45deg);
+	}
+}
+
+.c-navicon--active .c-navicon__line {
+	&:nth-child(2){
+		width: 0;
+	}
+
+	&:nth-child(1),
+	&:nth-child(3){
+		transition-delay: 0.3s;
+	}
+
+	&:nth-child(1){
+		transform: translateY(13px);
+	}
+
+	&:nth-child(3){
+		transform: translateY(-6px) rotate(90deg);
+	}
+}
