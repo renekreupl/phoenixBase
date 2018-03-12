@@ -47,6 +47,10 @@ module.exports = {
 			template: src + "sass/______tools/_tools.tmpl.svg.scss"
 		}
 	},
+	fonts: {
+		src: src + "fonts",
+		build: assets + "fonts/"
+	},
 	html: {
 		src: src + "html",
 		build: dest
