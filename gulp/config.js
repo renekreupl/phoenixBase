@@ -8,6 +8,9 @@ module.exports = {
 			sass: src + "sass/vendor",
 			js: assets + "js/vendor"
 		},
+		sass: [
+
+		],
 		js: [
 			"node_modules/jquery/dist/jquery.min.js",
 			"node_modules/webfontloader/webfontloader.js",

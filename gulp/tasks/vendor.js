@@ -10,4 +10,8 @@ gulp.task('vendor', function() {
 		.pipe(gulp.dest(config.paths.js))
 		.pipe(notify({ message: 'Copy Vendor JS Files. Please check it out' }));
 
+	//Copy Sass Files from Config File
+	gulp.src(config.sass)
+		.pipe(gulp.dest(config.paths.sass))
+		.pipe(notify({ message: 'Copy Vendor Sass Files. Please check it out' }));
 });
