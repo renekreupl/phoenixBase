@@ -2,10 +2,12 @@ var gulp			= require('gulp');
 var notify          = require('gulp-notify');
 var htmlmin 		= require('gulp-htmlmin');
 var plumber 		= require('gulp-plumber');
+var twig 			= require('gulp-twig');
 var config 			= require('../config').html;
 
 gulp.task('html', function() {
 	return gulp.src( config.src+'/*.html' )
+		.pipe(twig())
 		.pipe(htmlmin({collapseWhitespace: true}))
 		.pipe(plumber({errorHandler: notify.onError("Error: <%= error.message %>")}))
 		.pipe(gulp.dest( config.build ))
@@ -13,5 +15,5 @@ gulp.task('html', function() {
 });
 
 gulp.task('watch:html', function () {
-	gulp.watch( config.src+'/*.html' , ['html']);
+	gulp.watch( config.src+'/**/*.html' , ['html']);
 });

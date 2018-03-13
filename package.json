@@ -16,16 +16,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
-    "jquery": "^3.0.0",
-    "webfontloader": "latest",
-    "normalize.css": "latest",
-    "include-media": "latest",
-    "susy": "latest",
+    "bxslider": "latest",
     "family.scss": "latest",
-    "pace-progress": "latest",
-    "photoswipe": "latest",
+    "gulp-twig": "^1.2.0",
+    "include-media": "latest",
+    "jquery": "^3.0.0",
     "lazysizes": "latest",
-    "bxslider": "latest"
+    "normalize.css": "latest",
+    "npm": "^5.7.1",
+    "pace-progress": "latest",
+    "susy": "latest",
+    "webfontloader": "latest"
   },
   "devDependencies": {
     "require-dir": "^0.3.0",
