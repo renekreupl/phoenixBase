@@ -1,10 +1,10 @@
-var gulp			= require('gulp');
-var notify          = require('gulp-notify');
-var sass 			= require('gulp-sass');
-var autoprefixer 	= require('gulp-autoprefixer');
-var sourcemaps 		= require('gulp-sourcemaps');
-var rename          = require('gulp-rename');
-var config 			= require('../config').sass;
+const gulp			= require('gulp');
+const notify          = require('gulp-notify');
+const sass 			= require('gulp-sass');
+const autoprefixer 	= require('gulp-autoprefixer');
+const sourcemaps 		= require('gulp-sourcemaps');
+const rename          = require('gulp-rename');
+const config 			= require('../config').sass;
 
 gulp.task('sass', function() {
 	return gulp.src( [

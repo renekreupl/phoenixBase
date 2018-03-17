@@ -1,9 +1,9 @@
-var gulp			= require('gulp');
-var notify          = require('gulp-notify');
-var svgSprite		= require('gulp-svg-sprite');
-var size			= require('gulp-size');
-var plumber 		= require('gulp-plumber');
-var config 			= require('../config').img;
+const gulp			= require('gulp');
+const notify          = require('gulp-notify');
+const svgSprite		= require('gulp-svg-sprite');
+const size			= require('gulp-size');
+const plumber 		= require('gulp-plumber');
+const config 			= require('../config').img;
 
 
 gulp.task('svg', function () {

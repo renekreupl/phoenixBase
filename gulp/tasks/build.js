@@ -1,9 +1,9 @@
-var gulp			= require('gulp');
-var notify          = require('gulp-notify');
-var modernizr 		= require('gulp-modernizr');
-var uglify 			= require('gulp-uglify');
-var runSequence 	= require('run-sequence');
-var config 			= require('../config');
+const gulp			= require('gulp');
+const notify          = require('gulp-notify');
+const modernizr 		= require('gulp-modernizr');
+const uglify 			= require('gulp-uglify');
+const runSequence 	= require('run-sequence');
+const config 			= require('../config');
 
 
 gulp.task('build', function() {

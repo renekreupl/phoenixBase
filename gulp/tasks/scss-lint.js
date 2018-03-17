@@ -1,7 +1,7 @@
-var gulp			= require('gulp');
-var notify          = require('gulp-notify');
-var scsslint 		= require('gulp-scss-lint');
-var config 			= require('../config').sass;
+const gulp			= require('gulp');
+const notify          = require('gulp-notify');
+const scsslint 		= require('gulp-scss-lint');
+const config 			= require('../config').sass;
 
 gulp.task('scss-lint', function() {
 	return gulp.src( [config.src, '!src/sass/vendor/*.scss'] )

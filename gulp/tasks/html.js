@@ -1,9 +1,9 @@
-var gulp			= require('gulp');
-var notify          = require('gulp-notify');
-var htmlmin 		= require('gulp-htmlmin');
-var plumber 		= require('gulp-plumber');
-var twig 			= require('gulp-twig');
-var config 			= require('../config').html;
+const gulp			= require('gulp');
+const notify          = require('gulp-notify');
+const htmlmin 		= require('gulp-htmlmin');
+const plumber 		= require('gulp-plumber');
+const twig 			= require('gulp-twig');
+const config 			= require('../config').html;
 
 gulp.task('html', function() {
 	return gulp.src( config.src+'/*.html' )

@@ -1,7 +1,7 @@
-var gulp			= require('gulp');
-var notify          = require('gulp-notify');
-var changed 		= require('gulp-changed');
-var config 			= require('../config').fonts;
+const gulp			= require('gulp');
+const notify          = require('gulp-notify');
+const changed 		= require('gulp-changed');
+const config 			= require('../config').fonts;
 
 gulp.task('fonts', function() {
 	return gulp.src(config.src+'/*')

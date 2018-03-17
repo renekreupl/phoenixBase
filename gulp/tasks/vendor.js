@@ -1,7 +1,7 @@
-var gulp			= require('gulp');
-var notify          = require('gulp-notify');
-var rename          = require('gulp-rename');
-var config 			= require('../config').vendor;
+const gulp			= require('gulp');
+const notify          = require('gulp-notify');
+const rename          = require('gulp-rename');
+const config 			= require('../config').vendor;
 
 gulp.task('vendor', function() {
 

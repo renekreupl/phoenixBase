@@ -1,10 +1,10 @@
-var gulp			= require('gulp');
-var notify          = require('gulp-notify');
-var sourcemaps 		= require('gulp-sourcemaps');
-var plumber 		= require('gulp-plumber');
-var uglify 			= require('gulp-uglify');
-var concat 			= require('gulp-concat');
-var config 			= require('../config').js;
+const gulp			= require('gulp');
+const notify          = require('gulp-notify');
+const sourcemaps 		= require('gulp-sourcemaps');
+const plumber 		= require('gulp-plumber');
+const uglify 			= require('gulp-uglify');
+const concat 			= require('gulp-concat');
+const config 			= require('../config').js;
 
 gulp.task('scripts', function() {
 	return gulp.src( config.src+'/**/*.js' )
