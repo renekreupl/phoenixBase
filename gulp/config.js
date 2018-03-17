@@ -1,6 +1,6 @@
-var src = 'src/';
-var dest = "dist/";
-var assets = dest + "assets/";
+const src = 'src/';
+const dest = "dist/";
+const assets = dest + "assets/";
 
 module.exports = {
 	vendor: {
@@ -52,8 +52,8 @@ module.exports = {
 		masterimage: src + "favicon/favicon.png", // Path to your master picture 512x512px
 		datafile: src + "favicon/faviconData.json", // File where the favicon markups are stored
 		generatedpath: src + "images/favicons", // Path to the directory where to store the icons
-		iconspath: "/assets/images/favicons/", //for typo3 use /typo3conf/ext/template/Ressources/Public/...
-		htmlfile: [src + 'html/partials/favicon.html'],// List of the HTML files where to inject favicon markups
+		iconspath: assets + "images/favicons/", //for typo3 use /typo3conf/ext/template/Ressources/Public/...
+		htmlfile: [src + 'html/partials/favicon.html'], // List of the HTML files where to inject favicon markups
 		htmldir: src + 'html/partials/' // Path to the directory where to store the HTML files
 	},
 	fonts: {
@@ -66,5 +66,5 @@ module.exports = {
 	},
 	clean: [assets + 'css/**/*', assets + 'js/**/*', assets + 'images/*'],
 	watch: ['watch:sass', 'watch:scripts', 'watch:images', 'watch:svg', 'watch:html'],
-	build: ['vendor', 'svg', 'sass', 'scripts', 'images', 'html']
+	build: ['vendor', 'svg', 'sass', 'scripts', 'images', 'html', 'favicon']
 };

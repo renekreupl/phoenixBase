@@ -1,6 +1,6 @@
-var src = 'src/';
-var dest = "";
-var assets = dest + "assets/";
+const src = 'src/';
+const dest = "";
+const assets = dest + "assets/";
 
 module.exports = {
 	vendor: {
@@ -14,8 +14,6 @@ module.exports = {
 		js: [
 			"node_modules/jquery/dist/jquery.min.js",
 			"node_modules/webfontloader/webfontloader.js",
-			"node_modules/photoswipe/dist/photoswipe.min.js",
-			"node_modules/photoswipe/dist/photoswipe-ui-default.min.js",
 			"node_modules/bxslider/dist/jquery.bxslider.min.js"
 		]
 	},
@@ -46,9 +44,17 @@ module.exports = {
 			src: src + "svg",
 			build: "",
 			file: "sprite.svg",
-			sass: src + "sass/vendor/_svg-sprite.scss",
-			template: src + "sass/core/sprite-template.scss"
+			sass: src + "Sass/_____generic/_generic.svg-sprite.scss",
+			template: src + "Sass/______tools/_tools.tmpl.svg.scss"
 		}
+	},
+	favicon: {
+		masterimage: src + "favicon/favicon.png", // Path to your master picture 512x512px
+		datafile: src + "favicon/faviconData.json", // File where the favicon markups are stored
+		generatedpath: src + "images/favicons", // Path to the directory where to store the icons
+		iconspath: assets + "images/favicons/", //for typo3 use /typo3conf/ext/template/Ressources/Public/...
+		htmlfile: [src + 'html/partials/favicon.html'], // List of the HTML files where to inject favicon markups
+		htmldir: src + 'html/partials/' // Path to the directory where to store the HTML files
 	},
 	fonts: {
 		src: src + "fonts",
@@ -60,5 +66,5 @@ module.exports = {
 	},
 	clean: [assets + 'css/**/*', assets + 'js/**/*', assets + 'images/*'],
 	watch: ['watch:sass', 'watch:scripts', 'watch:images', 'watch:svg'],
-	build: ['vendor', 'svg', 'sass', 'scripts', 'images']
+	build: ['vendor', 'svg', 'sass', 'scripts', 'images', 'favicon']
 };
