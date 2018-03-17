@@ -1,10 +1,8 @@
 const gulp			= require('gulp');
-const notify          = require('gulp-notify');
-const plumber 		= require('gulp-plumber');
-const realFavicon 	= require ('gulp-real-favicon');
+const use			= require('gulp-load-plugins')();
 const runSequence 	= require('run-sequence');
-const fs 				= require('fs');
-const config 			= require('../config').favicon;
+const fs 			= require('fs');
+const config 		= require('../config').favicon;
 
 
 // Generate the icons. This task takes a few seconds to complete.
@@ -12,7 +10,7 @@ const config 			= require('../config').favicon;
 // you should run it whenever RealFaviconGenerator updates its
 // package (see the check-for-favicon-update task below).
 gulp.task('favicon-generate', function(done) {
-	realFavicon.generateFavicon({
+	use.realFavicon.generateFavicon({
 		masterPicture: config.masterimage,
 		dest: config.generatedpath,
 		iconsPath: config.iconspath,
@@ -80,7 +78,7 @@ gulp.task('favicon-generate', function(done) {
 // as is or refactor your existing HTML pipeline.
 gulp.task('favicon-inject-markups', function() {
 	return gulp.src( config.htmlfile )
-		.pipe(realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(config.datafile)).favicon.html_code))
+		.pipe(use.realFavicon.injectFaviconMarkups(JSON.parse(fs.readFileSync(config.datafile)).favicon.html_code))
 		.pipe(gulp.dest( config.htmldir ));
 });
 
@@ -90,7 +88,7 @@ gulp.task('favicon-inject-markups', function() {
 // continuous integration system.
 gulp.task('check-for-favicon-update', function(done) {
 	const currentVersion = JSON.parse(fs.readFileSync(config.datafile)).version;
-	realFavicon.checkForUpdates(currentVersion, function(err) {
+	use.realFavicon.checkForUpdates(currentVersion, function(err) {
 		if (err) {
 			throw err;
 		}

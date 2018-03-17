@@ -1,15 +1,12 @@
 const gulp			= require('gulp');
-const notify          = require('gulp-notify');
-const svgSprite		= require('gulp-svg-sprite');
-const size			= require('gulp-size');
-const plumber 		= require('gulp-plumber');
-const config 			= require('../config').img;
+const use			= require('gulp-load-plugins')();
+const config 		= require('../config').img;
 
 
 gulp.task('svg', function () {
 	return gulp.src( config.svg.src+'/**/*.svg' )
-		.pipe(plumber())
-		.pipe(svgSprite({
+		.pipe(use.plumber())
+		.pipe(use.svgSprite({
 			shape: {
 				spacing: {
 					padding: 5
@@ -33,13 +30,13 @@ gulp.task('svg', function () {
 				mapname: "icons"
 			}
 		})
-			.on('error', notify.onError('SVG Compile Error!'))
+			.on('error', use.notify.onError('SVG Compile Error!'))
 		)
-		.pipe(size({
+		.pipe(use.size({
 			showFiles: true
 		}))
 		.pipe(gulp.dest(config.svg.build))
-		.pipe(notify({ message: 'Yo, SVG task complete.' }));
+		.pipe(use.notify({ message: 'Yo, SVG task complete.' }));
 });
 
 gulp.task('watch:svg', function () {
