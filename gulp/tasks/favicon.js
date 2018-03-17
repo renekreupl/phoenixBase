@@ -2,6 +2,7 @@ const gulp			= require('gulp');
 const notify          = require('gulp-notify');
 const plumber 		= require('gulp-plumber');
 const realFavicon 	= require ('gulp-real-favicon');
+const runSequence 	= require('run-sequence');
 const fs 				= require('fs');
 const config 			= require('../config').favicon;
 
