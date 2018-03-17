@@ -1,11 +1,10 @@
-var gulp			= require('gulp');
-var notify          = require('gulp-notify');
-var scsslint 		= require('gulp-scss-lint');
-var config 			= require('../config').sass;
+const gulp			= require('gulp');
+const use			= require('gulp-load-plugins')();
+const config 		= require('../config').sass;
 
 gulp.task('scss-lint', function() {
 	return gulp.src( [config.src, '!src/sass/vendor/*.scss'] )
-		.pipe(scsslint({
+		.pipe(use.scsslint({
 			'config': 'scss-lint.yml',
 			'reporterOutput': 'scssReport.json',
 			'maxBuffer': 300000000007200

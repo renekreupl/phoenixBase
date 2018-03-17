@@ -64,6 +64,9 @@ gulp scss-lint
 SCSS-Lint Doku
 https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md
 
+### Webfonts
+You can use Google Fonts with JS webfontloader, or store webfonts in a "fonts" dir 
+
 ### SVG USe
 
 ```
@@ -85,12 +88,6 @@ https://github.com/brigade/scss-lint/blob/master/lib/scss_lint/linter/README.md
 
 ## ToDo
 
-
-//TODO Sass WP & T3 styles  
-//TODO ADD Magnific PopUp  
-//TODO Copy Font / Webfontloader  
-
-
 http://zellwk.com/blog/nunjucks-with-gulp/  
 https://www.npmjs.com/package/gulp-svgstore  
 https://github.com/addyosmani/critical  
@@ -110,5 +107,5 @@ https://github.com/addyosmani/critical
 * David Hellmann/Martin Herweg/Sascha Fuchs and many others from the www
 ## Copyright and license
 
-Code and documentation copyright 2017 Rene Kreupl,  
+Code and documentation copyright 2018 Rene Kreupl,  
 Code released under [the MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE). Docs released under [Creative Commons](https://github.com/twbs/bootstrap/blob/master/docs/LICENSE).

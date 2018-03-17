@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>{{ title }}</title>
+	<meta name="description" content="{{ description }}">
+
+	<link href="assets/css/main.min.css" rel="stylesheet">
+	<script src="assets/js/vendor/modernizr.min.js"></script>
+	<script src="assets/js/vendor/cookieconsent.min.js"></script>
+
+	{% include "../partials/favicon.html" %}
+</head>
+<body>
+
+{% include "../partials/header.html" %}
+
+{% block emotion %}{% endblock %}
+
+	<main>
+		{% block content %}{% endblock %}
+	</main>
+
+{% include "../partials/footer.html" %}
+
+	<script src="assets/js/vendor/jquery.min.js"></script>
+	<script src="assets/js/vendor/webfontloader.js"></script>
+	<script src="assets/js/main.min.js"></script>
+</body>
+</html>
