@@ -14,7 +14,7 @@ module.exports = {
 		js: [
 			"node_modules/jquery/dist/jquery.min.js",
 			"node_modules/webfontloader/webfontloader.js",
-			"node_modules/bxslider/dist/jquery.bxslider.min.js"
+			"node_modules/cookieconsent/build/cookieconsent.min.js"
 		]
 	},
 	sass: {
