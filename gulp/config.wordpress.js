@@ -54,7 +54,10 @@ module.exports = {
 		generatedpath: src + "images/favicons", // Path to the directory where to store the icons
 		iconspath: assets + "images/favicons/", //for typo3 use /typo3conf/ext/template/Ressources/Public/...
 		htmlfile: [src + 'html/partials/favicon.html'], // List of the HTML files where to inject favicon markups
-		htmldir: src + 'html/partials/' // Path to the directory where to store the HTML files
+		htmldir: src + 'html/partials/', // Path to the directory where to store the HTML files
+		colorwindows: '#da532c',
+		colorandroid: '#ffffff',
+		colorsafari: '#5bbad5'
 	},
 	fonts: {
 		src: src + "fonts",
