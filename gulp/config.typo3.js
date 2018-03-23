@@ -53,7 +53,7 @@ module.exports = {
 		datafile: src + "Favicon/faviconData.json", // File where the favicon markups are stored
 		generatedpath: src + "Images/favicons", // Path to the directory where to store the icons
 		iconspath: "Images/favicons/", //for typo3 use /typo3conf/ext/template/Ressources/Public/...
-		htmlfile: ['Resources/Private/Partials/Favicon.html'], // List of the HTML files where to inject favicon markups
+		htmlfile: ['Resources/Private/Templates/Favicons.html'], // List of the HTML files where to inject favicon markups
 		htmldir: "Resources/Private/Partials/", // Path to the directory where to store the HTML files
 		colorwindows: '#da532c',
 		colorandroid: '#ffffff',

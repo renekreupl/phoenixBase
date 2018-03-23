@@ -26,8 +26,6 @@ WebFont.load({
 
 jQuery(document).ready(function($) {
 
-	initPhotoSwipeFromDOM('.my-gallery');
-
 	//Fix jumping on sticky
 	$("body").css("padding-top", $(".c-header").height());
 
