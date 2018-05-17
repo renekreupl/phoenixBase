@@ -16,7 +16,8 @@ window.addEventListener("load", function(){
 			"link": "Rechtlichen Hinweisen.",
 			"href": "/datenschutz"
 		}
-	})});
+	})
+});
 
 WebFont.load({
 	google: {
