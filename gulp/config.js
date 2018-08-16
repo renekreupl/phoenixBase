@@ -9,11 +9,16 @@ module.exports = {
 			js: assets + "js/vendor"
 		},
 		sass: [
-
+		],
+		css: [
+			"node_modules/normalize.css/normalize.css",
+			"node_modules/cookieconsent/build/cookieconsent.min.css",
+			"node_modules/lightgallery/dist/css/lightgallery.css"
 		],
 		js: [
 			"node_modules/jquery/dist/jquery.min.js",
 			"node_modules/webfontloader/webfontloader.js",
+			"node_modules/lightgallery/dist/js/lightgallery.js",
 			"node_modules/cookieconsent/build/cookieconsent.min.js"
 		]
 	},
@@ -61,7 +66,12 @@ module.exports = {
 	},
 	fonts: {
 		src: src + "fonts",
-		build: assets + "fonts/"
+		build: assets + "fonts/",
+		googlefonts: {
+			fontsDir: "../fonts/",
+			cssDir: "../sass/_____generic/",
+			cssFilename: "_generic.googlefonts.scss"
+		}
 	},
 	html: {
 		src: src + "html",
