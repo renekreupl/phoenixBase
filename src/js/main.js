@@ -32,6 +32,12 @@ jQuery(document).ready(function($) {
 
 	createSticky($(".c-header"));
 
+
+	$('.c-gallery').lightGallery({
+		selector: '.lightbox'
+	});
+
+
 	$("#js__c-header__navtoggle").click(function() {
 		$(".c-navigation").fadeToggle();
 		$(".c-navicon", this).toggleClass("c-navicon--active");
