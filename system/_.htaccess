@@ -214,6 +214,14 @@ AddDefaultCharset utf-8
   # Options +SymLinksIfOwnerMatch
     RewriteEngine On
   # RewriteBase /
+
+	### Umleitung www [start]
+	#RewriteCond %{HTTP_HOST} !^www\.domain\.de$ [NC]
+	#RewriteRule ^(.*)$ http://www.domain.de/$1 [R=301,L]
+
+	#RewriteCond %{SERVER_PORT} !=443
+	#RewriteRule ^(.*)$ https://www.domain.de/$1 [R=301,L]
+
 </IfModule>
 
 # ------------------------------------------------------------------------------
