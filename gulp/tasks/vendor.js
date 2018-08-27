@@ -13,6 +13,7 @@ gulp.task('vendor', function() {
 	gulp.src(config.css, { base: process.cwd() })
 		.pipe(use.rename({
 			dirname: "",
+			prefix: "_",
 			extname: ".scss"
 		}))
 		.pipe(use.replace('../img/', '../Images/'))
