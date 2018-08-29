@@ -66,7 +66,12 @@ module.exports = {
 	},
 	fonts: {
 		src: src + "fonts",
-		build: assets + "Fonts/"
+		build: assets + "Fonts/",
+		googlefonts: {
+			fontsDir: "../Fonts/",
+			cssDir: "../Sass/_____generic/",
+			cssFilename: "_generic.googlefonts.scss"
+		}
 	},
 	html: {
 		src: src + "Html",
