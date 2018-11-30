@@ -37,4 +37,9 @@ jQuery(document).ready(function($) {
 		$(".c-navicon", this).toggleClass("c-navicon--active");
 	});
 
+	//Checkbox Powermail
+	$('.powermail_checkbox').change(function() {
+		$(this).parent("label").toggleClass("active");
+	});
+
 });
