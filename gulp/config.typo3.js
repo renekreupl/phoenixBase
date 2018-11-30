@@ -64,7 +64,7 @@ module.exports = {
 		colorsafari: '#5bbad5'
 	},
 	fonts: {
-		src: src + "fonts",
+		src: src + "Fonts",
 		build: assets + "Fonts/",
 		googlefonts: {
 			fontsDir: "../Fonts/",
