@@ -1,43 +1,43 @@
+
+$grid-gutter: gutter();
+$grid-margin-bottom: $grid-gutter;
+
 .o-grid {
 	@include media('>grid') {
 		display: flex;
 	}
 
-	&__item50 {
-		flex: 1 1;
-		display:flex;
-		flex-direction: column;
-		justify-content: center;
-		margin-right: gutter();
+	&__col {
+		flex: 1 1 auto;
+		width: calc(100% - #{$grid-gutter});
+		margin-right: $grid-gutter;
+		margin-bottom: $grid-margin-bottom;
 
 		&:last-child {
 			margin-right: 0;
 		}
-	}
 
-	&__item30 {
-		flex: 1 1 span(4);
-		margin-right: gutter();
+		@include media('>grid') {
+			width: calc(50% - #{$grid-gutter});
+		}
 
-		&:last-child {
-			margin-right: 0;
+		&--6 {
+			//50/50 standard
+		}
+		&--4 {
+			@include media('>desktop') {
+				width: calc(33.33% - #{$grid-gutter});
+			}
+			//flex: 1 1 span(4);
+		}
+		&--8 {
+			@include media('>desktop') {
+				width: calc(66.66% - #{$grid-gutter});
+			}
 		}
 	}
-	&__item70 {
-		flex: 1 1 span(8);
-		text-align: right;
-	}
-
-	&__item25 {
-		flex: 1 1 span(3);
-		margin-right: gutter();
-
-		&:last-child {
-			margin-right: 0;
-		}
-	}
-
 }
+
 
 
 
