@@ -24,8 +24,7 @@
     "lightgallery": "^1.6.11",
     "normalize.css": "^8.0.1",
     "pace-progress": "^1.0.2",
-    "susy": "^3.0.5",
-    "webfontloader": "^1.6.28"
+    "susy": "^3.0.5"
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",

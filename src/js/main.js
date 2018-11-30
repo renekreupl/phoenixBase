@@ -19,12 +19,6 @@ window.addEventListener("load", function(){
 	})
 });
 
-WebFont.load({
-	google: {
-		families: ['Ubuntu:300,400,400italic,500,700:latin']
-	}
-});
-
 jQuery(document).ready(function($) {
 
 	//Fix jumping on sticky

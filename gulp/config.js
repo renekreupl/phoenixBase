@@ -17,7 +17,6 @@ module.exports = {
 		],
 		js: [
 			"node_modules/jquery/dist/jquery.min.js",
-			"node_modules/webfontloader/webfontloader.js",
 			"node_modules/lightgallery/dist/js/lightgallery.js",
 			"node_modules/cookieconsent/build/cookieconsent.min.js"
 		]
@@ -79,5 +78,5 @@ module.exports = {
 	},
 	clean: [assets + 'css/**/*', assets + 'js/**/*', assets + 'images/*'],
 	watch: ['watch:sass', 'watch:scripts', 'watch:images', 'watch:svg', 'watch:html'],
-	build: ['vendor', 'svg', 'sass', 'scripts', 'images', 'html', 'favicon']
+	build: ['vendor', 'svg', 'sass', 'scripts', 'images', 'html', 'fonts', 'favicon']
 };
