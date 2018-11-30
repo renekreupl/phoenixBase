@@ -16,13 +16,9 @@
 p {
 	margin-top: 0;
 	margin-bottom: $base-line-height;
-	font-weight: 300;
+	font-weight: $base-font-weight;
 	// Measure - ideally about 65 chars per line
 	// max-width: $type-base * 30 + px;
-
-	// & small {
-	// 	color: lighten($color-text, 10%);
-	// }
 }
 
 /**

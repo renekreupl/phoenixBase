@@ -1,0 +1,14 @@
+table, .contenttable, .ce-table {
+	width: 100%;
+	max-width: 100%;
+
+	th, td {
+		padding: 0.5em 0.75em;
+		vertical-align: top;
+		border-top: 1px solid #dadada;
+	}
+
+	thead th {
+		border-bottom: 2px solid #dadada;
+	}
+}
