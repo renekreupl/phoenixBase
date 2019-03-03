@@ -14,7 +14,7 @@ gulp.task('build', function() {
 		.pipe(use.notify({ message: 'Copy pace.min.js successful' }));
 
 	//Copy lazysizes.min.js
-	gulp.src('./node_modules/lazysizes/lazysizes.min.js')
+	gulp.src('./node_modules/lazysizes/lazysizes.js')
 		.pipe(gulp.dest(config.js.src))
 		.pipe(use.notify({ message: 'Copy lazysizes.min.js successful' }));
 
