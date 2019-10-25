@@ -13,27 +13,23 @@
 
 $app-max-width:            1092px;
 $app-gutter-width: 16px;  // How much ist the Gutter on each Side
-
+$app-element-margin: $app-gutter-width * 4;
 
 // Master Breakpoints
 $breakpoints: (
 	'phone': 320px,
-	'grid': 830px,
+	'grid': 640px,
 	'tablet': 768px,
 	'desktop': 980px,
 	'wrapper': 1240px,
 	'wrapper-big': 1350px
 );
 
-/**
- * Extend `.btn {}` in _components.buttons.scss.
- */
-
 // These variables are framework variables, sourced from variables defined
 // above. Feel free to use these variables throughout your project, but do not
 // modify or reassign them.
-$base-spacing-unit:       $base-line-height;
+$base-spacing-unit:       $app-element-margin;
 $base-spacing-unit-tiny:  round($base-spacing-unit / 4);
 $base-spacing-unit-small: round($base-spacing-unit / 2);
-$base-spacing-unit-large: round($base-spacing-unit * 2);
+$base-spacing-unit-large: round($base-spacing-unit * 1.25);
 $base-spacing-unit-huge:  round($base-spacing-unit * 4);

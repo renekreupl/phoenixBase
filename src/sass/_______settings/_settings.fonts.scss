@@ -28,9 +28,3 @@ $type-large						: 30px;
 $type-mid						: 22px;
 $type-base						: $base-font-size;
 $type-small						: 12px;
-
-
-// Calculated measurements
-$line-height-ratio: $base-line-height / $base-font-size;
-$base-spacing-unit: $line-height-ratio;
-$half-spacing-unit: $base-spacing-unit / 2;
