@@ -40,6 +40,11 @@ $colors: (
 		'light': #eeeeee,
 		'dark': #2d2c31
 	),
+	'status': (
+		'error': red,
+		'warning': orange,
+		'info': blue,
+	),
 );
 
 $opacity: (
