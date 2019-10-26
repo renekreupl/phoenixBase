@@ -15,15 +15,13 @@ gulp.task('favicon-generate', function(done) {
 		dest: config.generatedpath,
 		iconsPath: config.iconspath,
 		design: {
-			design: {
-				ios: {
-					pictureAspect: 'noChange',
-					assets: {
-						ios6AndPriorIcons: false,
-						ios7AndLaterIcons: false,
-						precomposedIcons: false,
-						declareOnlyDefaultIcon: true
-					}
+			ios: {
+				pictureAspect: 'noChange',
+				assets: {
+					ios6AndPriorIcons: false,
+					ios7AndLaterIcons: false,
+					precomposedIcons: false,
+					declareOnlyDefaultIcon: true
 				}
 			},
 			desktopBrowser: {},

@@ -34,6 +34,7 @@
   "devDependencies": {
     "browser-sync": "^2.26.7",
     "del": "^4.1.1",
+    "node-notifier": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^6.1.0",
     "gulp-changed": "^4.0.0",
@@ -44,7 +45,6 @@
     "gulp-imagemin": "^6.0.0",
     "gulp-load-plugins": "^1.6.0",
     "gulp-modernizr": "^3.2.1",
-    "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.1",
     "gulp-real-favicon": "^0.3.2",
     "gulp-rename": "^1.4.0",
