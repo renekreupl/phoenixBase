@@ -9,24 +9,21 @@ import uglify from 'gulp-uglify';
 import modernizr from 'gulp-modernizr';
 
 // Tasks
-/*
-//import { reload, serve } from './server';
+import { vendor } from './vendor';
+import { favicon } from './favicon';
+import { images } from './images';
+import { googlefonts } from './googlefonts';
+import { fonts } from './fonts';
+import { html } from './html';
 import { styles } from './styles';
 import { scripts } from './scripts';
-import { templates } from './templates';
-import { copyImages } from './copy-images';
-import { fonts } from './fonts';
-import { copy } from './copy';
-import { buildSvgSprite } from './build-vectorsprite';
-import { minifyImages } from './minify-images';
-*/
-// TODO: Set tasks
+
 
 // Config
 import { config } from '../config';
 
 // Function Copy Base Files
-export function buildBaseFiles(cb) {
+function buildBaseFiles(cb) {
 	console.log("Copy pace.min.js successful");
 	src('./node_modules/pace-progress/pace.min.js')
 		.pipe(dest(config.paths.js.srcRaw));
@@ -40,11 +37,10 @@ export function buildBaseFiles(cb) {
 		.pipe(modernizr('modernizr.min.js'))
 		.pipe(uglify())
 		.pipe(dest( config.paths.vendor.paths.js ));
-
 	cb();
 }
 
 export const build = series(
-	//parallel('vendor', 'svg', 'sass', 'scripts', 'images', 'html', 'googlefonts', 'fonts', 'favicon'),
-	buildBaseFiles
+	buildBaseFiles,
+	vendor, favicon, images, googlefonts, fonts, html, styles, scripts
 );

@@ -8,8 +8,6 @@
 
 import gulp from "gulp";
 import { help } from './tasks/default';
-
-import { build } from './tasks/build';
 import { vendor } from './tasks/vendor';
 import { fonts } from './tasks/fonts';
 import { googlefonts } from './tasks/googlefonts';
@@ -20,8 +18,8 @@ import { clean } from './tasks/clean';
 import { scripts } from './tasks/scripts';
 import { styles } from './tasks/styles';
 import { watch } from './tasks/watch';
+import { build } from './tasks/build';
 
-exports.build = build;
 exports.vendor = vendor;
 exports.fonts = fonts;
 exports.googlefonts = googlefonts;
@@ -33,5 +31,6 @@ exports.clean = clean;
 exports.scripts = scripts;
 exports.styles = styles;
 exports.watch = watch;
+exports.build = build;
 
 exports.default = help;
