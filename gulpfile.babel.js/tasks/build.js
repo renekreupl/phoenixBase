@@ -42,5 +42,5 @@ function buildBaseFiles(cb) {
 
 export const build = series(
 	buildBaseFiles,
-	vendor, favicon, images, googlefonts, fonts, html, styles, scripts
+	vendor, images, fonts, html, styles, scripts
 );
