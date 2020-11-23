@@ -75,6 +75,7 @@ export const config = {
 		},
 		html: {
 			src: "src/html/*.html",
+			watch: "src/html/**/*.html",
 			dest: "dist/"
 		},
 

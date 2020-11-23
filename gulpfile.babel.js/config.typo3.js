@@ -75,6 +75,7 @@ export const config = {
 		},
 		html: {
 			src: "Resources/Source/Html/*.html",
+			watch: "src/html/**/*.html",
 			dest: "Resources/Public/"
 		},
 

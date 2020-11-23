@@ -22,7 +22,7 @@ function watchFiles() {
 	// this task watches files for changes and triggers compilation and BrowserSync reloads
 	gulp.watch( config.paths.images.src, gulp.series('images'));
 	gulp.watch( config.paths.fonts.src, gulp.series('fonts'));
-	gulp.watch( config.paths.html.src, gulp.series('html'));
+	gulp.watch( config.paths.html.watch, gulp.series('html'));
 	gulp.watch( config.paths.js.src, gulp.series('scripts'));
 	gulp.watch( config.paths.sass.src, gulp.series('styles'));
 }
