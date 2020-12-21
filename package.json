@@ -58,6 +58,6 @@
     "gulp-task-listing": "^1.1.0",
     "gulp-twig": "^1.2.0",
     "gulp-uglify": "^3.0.2",
-    "node-notifier": "^6.0.0"
+    "node-notifier": "^8.0.1"
   }
 }
